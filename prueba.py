@@ -20,13 +20,11 @@ def leer(data):
 	pixels = []
 
 	while indice < len(data):
-	    grupo = tuple(map(int, data[indice:indice + 3]))
-	    pixels.append(f'pixels[{indice//3}]={grupo}')
-	    indice += 3
-
-	imagen = "\n".join(pixels)
-
-	print(imagen)
+		grupo = tuple(map(int, data[indice:indice + 3]))
+		pixels.append(f'pixels[{indice//3}]={grupo}')
+		indice += 3
+		imagen = "\n".join(pixels)
+		print(imagen)
 
 
 print("inicia servicio")
