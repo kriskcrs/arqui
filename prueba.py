@@ -1130,6 +1130,12 @@ def leer(data):
                 left()
             elif dataT == 'd':
                rigth()    
+            elif dataT == 'f':
+               like()   
+            elif dataT == 'g':
+               block()      
+            elif dataT == 'h':
+               mario()     
             else:
                 pixels[indice] = pintar_color(dataT)
         except Exception as e:
